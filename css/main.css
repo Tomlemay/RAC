@@ -1,0 +1,236 @@
+/********* MAIN ***********/
+
+body{font-family: 'Open Sans', sans-serif;font-size: 20px;color:#454B44; font-weight: 200;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;}
+h2 {font-size: 32px; font-weight: 200;}
+
+
+/******** SECTIONS *********/
+
+header {
+    margin-bottom:25px;
+}
+
+header>*, footer>*{
+    padding-left:75px;
+    padding-right:75px;
+}
+
+nav{
+    margin-bottom: 0px!important;
+}
+
+.navbar {
+    background-color: #094F97;
+    border:0px;
+    border-radius: 0px;
+    min-height: 75px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav a:hover{
+    background-color: #06335f!important;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus {
+    border-bottom:2px solid white;
+    background-color: #06335f;
+}
+.navbar .cisss{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color:white;
+    font-size: 1.4em;
+    margin-bottom:-5px;
+}
+.navbar .slogan{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color:white;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.banner {
+    min-height: 85vh;
+    background-image:  url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding-top: 75px;
+}
+
+.banner h1{
+    color:white;
+    font-size: 48px;
+}
+.banner h1 span{
+    font-weight: 800;
+}
+
+.introduction{
+    margin-top: -250px;
+    padding-top:75px;
+    padding-bottom: 70px;
+    background-image: url("../img/arc.svg");
+    background-position: top center;
+    background-size: cover;
+}
+
+.introduction-text{
+    width:90%;
+    max-width: 950px;
+    margin:auto;
+    text-align:center;  
+}
+.introduction-text h2{
+    font-size: 42px;
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    padding:35px 100px;
+}
+
+section img {
+    width:100%;
+    padding:0px 15px;
+}
+
+
+section.equipe{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #eee;
+}
+
+section.avenir {
+    text-align:center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+section.novateur {
+    color:white;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #094F97;
+}
+
+section.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+}
+
+section.grid .grid-item{
+    background-color: #eee;
+    border-radius: 10px ;
+    padding:40px 20px;
+    min-height: 200px;
+    text-align: center;
+}
+
+section.grid .grid-item .qte{
+    background-color: #454B44;
+    padding:10px;
+    border-radius: 50%;
+    color:white;
+    height: 90px;
+    width: 90px;
+    margin:auto;
+    padding:22px 0px;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+section.grid .grid-item .impaire{
+    background-color: #094F97;
+}
+
+footer .navbar{
+    background-color: #454B44;
+    min-height: 40px;
+}
+
+footer .navbar-inverse .navbar-nav a:hover{
+    background-color: #292929!important;
+}
+
+footer .navbar .cisss{
+    font-size: 1.2em;
+}
+footer .navbar .slogan{
+    font-size: 0.8em;
+}
+footer .navbar-inverse .navbar-nav>.active>a, footer .navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #292929;
+}
+
+/* GRAND ÉCRANS */
+  @media only screen and (min-width: 992px) {
+} 
+
+/* IPAD */
+@media only screen and (max-width: 768px) {
+    header>*, section, footer>*{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    header .navbar .cisss{
+        font-size: 1.2em;
+    }
+    header .navbar .slogan{
+        font-size: 0.8em;
+    }
+    .banner {
+        min-height: 60vh;
+    }
+    section.equipe{
+        grid-template-columns: 2fr 5fr;
+  }
+    section.novateur{
+        grid-template-columns: 5fr 2fr;
+    }
+  } 
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .banner{
+        min-height: 60vh;
+        padding-top: 40px;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    section.equipe{
+        grid-template-columns: 1fr;
+    }
+    section.novateur{
+        grid-template-columns: 1fr;
+    }
+    .introduction-text h2{
+        font-size: 32px;
+    }
+}
+
+/* PETIT MOBILE */
+@media only screen and (max-width: 350px) {
+    .introduction {
+        margin-top: -125px;
+    }
+}
+  
+  
+  
+
+ 
+  
+
